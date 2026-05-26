@@ -1,0 +1,215 @@
+/* ─── Philosophy Page ─────────────────────────────────────────────────────── */
+
+/* Hero */
+.phil-hero {
+  background: transparent;
+  padding: 80px var(--gutter) 100px;
+  position: relative;
+  z-index: 0;
+}
+
+.phil-hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--forest-deep) 0%, var(--forest-deep) 40%, var(--ember) 100%);
+}
+
+.phil-hero__content {
+  position: relative;
+  z-index: 1;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.phil-hero .eyebrow {
+  color: rgba(255,255,255,0.80);
+}
+
+.phil-hero h1 {
+  color: var(--white);
+  text-shadow: 0 1px 14px rgba(0,0,0,0.45);
+  margin-top: 16px;
+}
+
+/* Market thesis */
+.market__layout {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(280px, 2fr);
+  gap: clamp(32px, 5vw, 72px);
+  align-items: stretch;
+  margin-top: 16px;
+}
+
+.market__body {
+  max-width: 680px;
+}
+
+.market__body p {
+  font-size: 16px;
+  color: var(--stone);
+  line-height: 1.8;
+  margin-bottom: 28px;
+}
+
+.market__body p:last-child {
+  margin-bottom: 0;
+}
+
+.market__image {
+  margin: 0;
+  min-height: 420px;
+  overflow: hidden;
+  background: var(--mist);
+}
+
+.market__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+}
+
+/* Development philosophy */
+.dev-phil__layout {
+  max-width: 700px;
+}
+
+.dev-phil__layout p {
+  font-size: 16px;
+  color: var(--stone);
+  line-height: 1.8;
+  margin-bottom: 24px;
+}
+
+.dev-phil__layout p:last-child {
+  margin-bottom: 0;
+}
+
+/* Team */
+.team__members {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(32px, 5vw, 64px);
+  margin-top: 16px;
+}
+
+.team__member {
+  background: var(--white);
+  box-shadow: var(--shadow-sm);
+  border-top: 2px solid var(--mist);
+  overflow: hidden;
+}
+
+.team__member-body {
+  padding: clamp(24px, 3vw, 36px);
+}
+
+.team__member-name {
+  font-family: var(--fahkwang);
+  font-weight: 300;
+  font-size: 22px;
+  color: var(--forest-deep);
+  margin-bottom: 4px;
+}
+
+.team__member-role {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ocean-slate);
+  margin-bottom: 20px;
+}
+
+.team__member-bio {
+  font-size: 14px;
+  color: var(--stone);
+  line-height: 1.7;
+}
+
+.team__headshot {
+  width: 100%;
+  height: 320px;
+  object-fit: contain;
+  object-position: center center;
+  background: var(--mist);
+  display: block;
+  filter: grayscale(10%);
+}
+
+.team__headshot-placeholder {
+  width: 100%;
+  height: 260px;
+  background: var(--mist);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team__headshot-placeholder::after {
+  content: attr(data-label);
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--stone);
+}
+
+/* Credentials */
+.credentials__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 24px 0 48px;
+}
+
+.credentials__list li {
+  font-family: var(--poppins);
+  font-weight: 300;
+  font-size: 15px;
+  color: var(--sage);
+  padding-left: 20px;
+  position: relative;
+}
+
+.credentials__list li::before {
+  content: '·';
+  position: absolute;
+  left: 0;
+  color: var(--ocean-slate);
+}
+
+.credentials__cta-strip {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.credentials__cta-label {
+  font-family: var(--poppins);
+  font-weight: 300;
+  font-size: 16px;
+  color: var(--sage);
+}
+
+/* ─── Responsive ──────────────────────────────────────────────────────────── */
+
+@media (max-width: 768px) {
+  .market__layout {
+    grid-template-columns: 1fr;
+  }
+
+  .market__image {
+    min-height: 280px;
+  }
+
+  .team__members {
+    grid-template-columns: 1fr;
+  }
+}

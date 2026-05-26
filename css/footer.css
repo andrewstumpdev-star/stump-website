@@ -1,0 +1,109 @@
+/* ─── Footer ──────────────────────────────────────────────────────────────── */
+
+.site-footer {
+  background: var(--forest-deep);
+  padding: 72px 0 48px;
+  margin-top: clamp(48px, 6vw, 80px);
+  position: relative;
+  z-index: 1;
+}
+
+.site-footer__inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+.site-footer__brand,
+.site-footer__logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 36px;
+  color: var(--white);
+}
+
+/* Img-based mark */
+.site-footer__mark {
+  width: 112px;
+  height: 112px;
+  flex-shrink: 0;
+  filter: brightness(0) invert(1);
+  opacity: 0.7;
+  display: block;
+}
+
+/* Footer wordmark wrapper */
+.site-footer__wordmark {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.4em;
+  line-height: 1;
+}
+
+/* "STUMP" — Poppins, secondary */
+.site-footer__wordmark-stump {
+  font-family: var(--poppins);
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+/* "Development" — Fahkwang, primary display */
+.site-footer__wordmark-development {
+  font-family: var(--fahkwang);
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0.06em;
+  color: var(--white);
+}
+
+.site-footer__tagline {
+  font-family: var(--poppins);
+  font-weight: 300;
+  font-size: 13px;
+  color: var(--stone);
+  letter-spacing: 0.02em;
+  margin-top: 8px;
+}
+
+.site-footer__divider {
+  border: none;
+  border-top: 1px solid rgba(174, 181, 176, 0.15);
+  margin: 0 0 36px;
+}
+
+.site-footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.site-footer__left,
+.site-footer__right {
+  font-family: var(--poppins);
+  font-weight: 300;
+  font-size: 13px;
+  color: var(--stone);
+  line-height: 1.8;
+}
+
+.site-footer__right {
+  text-align: right;
+}
+
+@media (max-width: 640px) {
+  .site-footer__bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .site-footer__right {
+    text-align: left;
+  }
+}

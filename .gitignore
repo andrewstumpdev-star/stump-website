@@ -1,0 +1,9 @@
+.claude/
+*.log
+*.tmp
+*.bak
+*.old
+*.xlsx
+*.zip
+.DS_Store
+Thumbs.db

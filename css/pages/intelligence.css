@@ -1,0 +1,291 @@
+/* ─── Intelligence Page ────────────────────────────────────────────────────── */
+
+/* Hero */
+.advisory-hero {
+  background: transparent;
+  padding: 184px var(--gutter) 115px;
+}
+
+.advisory-hero__content {
+  max-width: 780px;
+}
+
+.advisory-hero .eyebrow {
+  color: var(--forest);
+}
+
+.advisory-hero h1 {
+  color: var(--forest-deep);
+  margin-top: 16px;
+  margin-bottom: 28px;
+}
+
+.advisory-hero__sub {
+  font-family: var(--poppins);
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.65;
+  color: var(--forest);
+}
+
+/* Who section */
+.who__body {
+  max-width: 640px;
+}
+
+.who__body p {
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--stone);
+  margin-bottom: 24px;
+}
+
+.who__body p:last-child {
+  margin-bottom: 0;
+}
+
+/* Service tiers intro */
+.tiers__intro {
+  max-width: 600px;
+  margin-bottom: 56px;
+}
+
+.tiers__intro h2 {
+  margin-top: 16px;
+  margin-bottom: 20px;
+}
+
+.tiers__intro p {
+  font-size: 16px;
+  color: var(--stone);
+  line-height: 1.7;
+}
+
+/* Service tier cards */
+.tier-card {
+  background: var(--white);
+  box-shadow: var(--shadow-md);
+  border-radius: 2px;
+  padding: clamp(36px, 5vw, 56px);
+  margin-bottom: 24px;
+  border-left: 4px solid var(--mist);
+  transition: box-shadow var(--duration) var(--ease);
+}
+
+.tier-card:hover {
+  box-shadow: 0 6px 24px rgba(0,0,0,0.10);
+}
+
+.tier-card--ok     { border-left-color: var(--status-ok); }
+.tier-card--gold   { border-left-color: var(--gold); }
+.tier-card--forest { border-left-color: var(--forest); }
+
+.tier-card__header {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.tier-card__num {
+  font-family: var(--mono);
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  color: var(--gold);
+}
+
+.tier-card__name {
+  font-family: var(--poppins);
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--forest-deep);
+  letter-spacing: 0.04em;
+}
+
+.tier-card__question-label {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--stone);
+  margin-bottom: 8px;
+}
+
+.tier-card__question {
+  font-family: var(--fahkwang);
+  font-weight: 300;
+  font-size: clamp(18px, 2vw, 22px);
+  color: var(--forest-deep);
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+.tier-card__desc {
+  font-size: 15px;
+  color: var(--stone);
+  line-height: 1.7;
+  margin-bottom: 32px;
+}
+
+.tier-card__section-label {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--stone);
+  margin-bottom: 12px;
+  margin-top: 28px;
+}
+
+.tier-card__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 28px;
+}
+
+.tier-card__list li {
+  font-size: 14px;
+  color: var(--stone);
+  line-height: 1.55;
+  padding-left: 16px;
+  position: relative;
+}
+
+.tier-card__list li::before {
+  content: '·';
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+}
+
+.tier-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-top: 32px;
+  border-top: 1px solid rgba(110, 119, 119, 0.15);
+  margin-top: 32px;
+}
+
+.tier-card__pricing {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.tier-card__price {
+  font-family: var(--mono);
+  font-size: 22px;
+  color: var(--forest-deep);
+  font-weight: 400;
+}
+
+.tier-card__turnaround {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  color: var(--stone);
+}
+
+/* Beyond Advisory / Execution section */
+.execution__content {
+  max-width: 600px;
+}
+
+.execution__content h2 {
+  color: var(--forest-deep);
+  margin: 16px 0 28px;
+}
+
+.execution__body p {
+  color: var(--stone);
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.execution__body p:last-child {
+  margin-bottom: 36px;
+}
+
+/* Process section */
+.process__headline {
+  margin: 16px 0 48px;
+  max-width: 480px;
+}
+
+.process__steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.process__step-num {
+  font-family: var(--mono);
+  font-weight: 500;
+  font-size: 28px;
+  color: var(--mist);
+  margin-bottom: 16px;
+  line-height: 1;
+}
+
+.process__step h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.process__step p {
+  font-size: 14px;
+  color: var(--stone);
+  line-height: 1.65;
+}
+
+/* Bottom CTA */
+.advisory-cta {
+  text-align: center;
+}
+
+.advisory-cta__headline {
+  font-family: var(--fahkwang);
+  font-weight: 300;
+  font-size: clamp(22px, 3vw, 32px);
+  color: var(--white);
+  margin-bottom: 16px;
+}
+
+.advisory-cta__sub {
+  font-family: var(--poppins);
+  font-weight: 300;
+  font-size: 16px;
+  color: var(--sage);
+  max-width: 480px;
+  margin: 0 auto 40px;
+  line-height: 1.65;
+}
+
+.advisory-cta .cta-group {
+  justify-content: center;
+}
+
+/* ─── Responsive ──────────────────────────────────────────────────────────── */
+
+@media (max-width: 768px) {
+  .process__steps {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .tier-card__footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .tier-card__footer .btn {
+    width: auto;
+  }
+}

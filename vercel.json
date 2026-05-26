@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    {
+      "source": "/advisory.html",
+      "destination": "/property-analysis.html",
+      "permanent": true
+    },
+    {
+      "source": "/intelligence.html",
+      "destination": "/property-analysis.html",
+      "permanent": true
+    }
+  ]
+}

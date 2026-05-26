@@ -1,0 +1,252 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Stump Development &middot; Santa Cruz</title>
+  <meta name="description" content="Start a conversation with Stump Development about site evaluation, development partnerships, capital partnerships, or development intelligence in Santa Cruz County.">
+  <meta property="og:title" content="Contact | Stump Development">
+  <meta property="og:description" content="Start a conversation with Stump Development about property, partnership, and development intelligence inquiries.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://stumpdevelopment.com/contact.html">
+  <meta property="og:image" content="https://stumpdevelopment.com/assets/Logo.png">
+  <link rel="canonical" href="https://stumpdevelopment.com/contact.html">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/assets/logos/stump-mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fahkwang:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&family=Poppins:wght@300;400;500;900&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css?v=35">
+  <link rel="stylesheet" href="css/base.css?v=35">
+  <link rel="stylesheet" href="css/nav.css?v=35">
+  <link rel="stylesheet" href="css/footer.css?v=35">
+  <link rel="stylesheet" href="css/pages/contact.css?v=35">
+
+  <!-- LocalBusiness structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Stump Development LLC",
+    "description": "Residential development company and intelligence practice serving Santa Cruz County.",
+    "url": "https://stumpdevelopment.com",
+    "email": "officestumpdev@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Santa Cruz",
+      "addressRegion": "CA",
+      "addressCountry": "US"
+    },
+    "areaServed": {
+      "@type": "AdministrativeArea",
+      "name": "Santa Cruz County"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- --- Navigation ------------------------------------------------------ -->
+  <header class="site-header">
+  <nav class="site-nav" role="navigation" aria-label="Main navigation">
+      <a href="index.html" class="site-nav__logo" aria-label="Stump Development &mdash; Home">
+        <img class="site-nav__mark" src="/assets/Logo.png" alt="">
+        <span class="site-nav__wordmark"><span class="site-nav__wordmark-stump">STUMP</span><span class="site-nav__wordmark-development">Development</span></span>
+      </a>
+      <ul class="site-nav__links">
+        <li><a href="development.html">Development</a></li>
+        <li><a href="property-analysis.html">Intelligence</a></li>
+        <li><a href="philosophy.html">Philosophy</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+      <button class="site-nav__hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+  </nav>
+
+  <div class="site-nav__mobile-panel" aria-label="Mobile navigation">
+    <ul>
+      <li><a href="development.html">Development</a></li>
+      <li><a href="property-analysis.html">Intelligence</a></li>
+      <li><a href="philosophy.html">Philosophy</a></li>
+      <li><a href="contact.html" aria-current="page">Contact</a></li>
+    </ul>
+  </div>
+  </header>
+
+  <main>
+
+    <!-- --- Hero -------------------------------------------------------- -->
+    <section class="contact-hero">
+      <div class="container">
+        <div class="contact-hero__content">
+          <span class="eyebrow">Contact</span>
+          <h1>
+            Start a conversation.
+          </h1>
+        </div>
+      </div>
+    </section>
+
+    <!-- --- Form + Direct Contact --------------------------------------- -->
+    <section class="section contact-body">
+      <div class="container">
+        <div class="contact-body__layout">
+
+          <!-- Form -->
+          <div class="fade-in">
+            <p class="contact-intro">
+              Tell us what you are trying to move forward - a property, a
+              development idea, a permit path, a construction project, or an
+              investment partnership. If the project fits our model, we'll follow
+              up with the best next step.
+            </p>
+            <form
+              id="contact-form"
+              action="https://formspree.io/f/mzdkaayo"
+              method="POST"
+              class="contact-form"
+              novalidate
+            >
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="name">Name</label>
+                  <input
+                    class="form-input"
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    autocomplete="name"
+                    placeholder="Your name"
+                  >
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="email">Email</label>
+                  <input
+                    class="form-input"
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    autocomplete="email"
+                    placeholder="your@email.com"
+                  >
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="phone">Phone <span>(optional)</span></label>
+                <input
+                  class="form-input"
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  autocomplete="tel"
+                  placeholder="(831) 000-0000"
+                >
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="service">I'm interested in</label>
+                <select class="form-select" id="service" name="service">
+                  <option value="" disabled selected>Select an inquiry type</option>
+                  <option value="site-evaluation">Property / Site Evaluation</option>
+                  <option value="partnership">Development Partnership</option>
+                  <option value="capital">Capital Partnership</option>
+                  <option value="design-build-gc">Design-Build / General Contracting</option>
+                  <option value="permitting-preconstruction">Permitting / Preconstruction Support</option>
+                  <option value="intelligence">Development Intelligence Report</option>
+                  <option value="general">General Inquiry</option>
+                </select>
+              </div>
+
+              <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;opacity:0;" aria-hidden="true">
+
+              <div class="form-group">
+                <label class="form-label" for="property">Property Address or APN <span>(optional)</span></label>
+                <input
+                  class="form-input"
+                  type="text"
+                  id="property"
+                  name="property"
+                  placeholder="123 Example St, Santa Cruz, CA or APN 000-000-00"
+                >
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="message">Brief description of your situation <span>(optional)</span></label>
+                <textarea
+                  class="form-textarea"
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="Tell us about your property, investment goals, or what you're trying to figure out."
+                ></textarea>
+              </div>
+
+              <div id="form-status" class="form-status" role="alert" aria-live="polite"></div>
+
+              <button type="submit" class="btn btn--primary">Send Message</button>
+            </form>
+          </div>
+
+          <!-- Direct contact -->
+          <div class="contact-direct fade-in">
+            <span class="eyebrow">Direct Contact</span>
+            <p class="contact-direct__label">Prefer a direct conversation?</p>
+            <ul class="contact-info-list">
+              <li>
+                <a href="mailto:officestumpdev@gmail.com">officestumpdev@gmail.com</a>
+              </li>
+              <li>
+                <a href="tel:+18315660197">(831) 566-0197</a>
+              </li>
+              <li class="info-group">
+                Stump Development LLC<br>
+                Santa Cruz, California
+              </li>
+              <li class="info-group">
+                CSLB #1142485
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- --- Footer ---------------------------------------------------------- -->
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__logo">
+        <img class="site-footer__mark" src="/assets/Logo.png" alt="">
+        <span class="site-footer__wordmark"><span class="site-footer__wordmark-stump">STUMP</span><span class="site-footer__wordmark-development">Development</span></span>
+      </div>
+      <hr class="site-footer__divider">
+      <div class="site-footer__bottom">
+        <div class="site-footer__left">
+          CSLB #1142485<br>
+          officestumpdev@gmail.com
+        </div>
+        <div class="site-footer__right">
+          &copy; 2026 Stump Development LLC<br>
+          Santa Cruz, California
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/nav.js"></script>
+  <script src="js/form.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+

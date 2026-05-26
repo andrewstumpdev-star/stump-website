@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found | Stump Development</title>
+  <meta name="description" content="The requested Stump Development page could not be found.">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="/assets/logos/stump-mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fahkwang:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&family=Poppins:wght@300;400;500;900&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css?v=35">
+  <link rel="stylesheet" href="css/base.css?v=35">
+  <link rel="stylesheet" href="css/nav.css?v=35">
+  <link rel="stylesheet" href="css/footer.css?v=35">
+  <style>
+    .not-found {
+      min-height: calc(100vh - var(--header-height));
+      display: grid;
+      place-items: center;
+      background: var(--white-warm);
+      padding: 96px var(--gutter);
+    }
+
+    .not-found__inner {
+      max-width: 560px;
+    }
+
+    .not-found__headline {
+      margin: 16px 0 24px;
+      color: var(--forest-deep);
+    }
+
+    .not-found__body {
+      color: var(--stone);
+      margin-bottom: 36px;
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="site-nav" role="navigation" aria-label="Main navigation">
+      <a href="index.html" class="site-nav__logo" aria-label="Stump Development &mdash; Home">
+        <img class="site-nav__mark" src="/assets/Logo.png" alt="">
+        <span class="site-nav__wordmark"><span class="site-nav__wordmark-stump">STUMP</span><span class="site-nav__wordmark-development">Development</span></span>
+      </a>
+      <ul class="site-nav__links">
+        <li><a href="development.html">Development</a></li>
+        <li><a href="property-analysis.html">Intelligence</a></li>
+        <li><a href="philosophy.html">Philosophy</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="site-nav__hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+    <div class="site-nav__mobile-panel" aria-label="Mobile navigation">
+      <ul>
+        <li><a href="development.html">Development</a></li>
+        <li><a href="property-analysis.html">Intelligence</a></li>
+        <li><a href="philosophy.html">Philosophy</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="not-found">
+    <div class="not-found__inner">
+      <span class="eyebrow">404</span>
+      <h1 class="not-found__headline">Page not found.</h1>
+      <p class="not-found__body">The page may have moved as the site was simplified for launch.</p>
+      <div class="cta-group">
+        <a href="index.html" class="btn btn--primary">Home</a>
+        <a href="property-analysis.html" class="btn btn--ghost-dark">Development Intelligence</a>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/nav.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
