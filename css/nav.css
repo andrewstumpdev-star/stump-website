@@ -19,6 +19,7 @@
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 16px var(--gutter);
+  min-height: var(--header-height);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -29,14 +30,26 @@
 .site-nav__logo {
   display: flex;
   align-items: center;
+  gap: 14px;
   text-decoration: none;
   flex-shrink: 0;
 }
 
-.site-nav__logo-image {
-  width: 326px;
-  height: auto;
+.site-nav__logo-symbol {
+  width: 64px;
+  height: 64px;
   display: block;
+  flex-shrink: 0;
+}
+
+.site-nav__logo-text {
+  color: var(--white);
+  font-family: var(--manrope);
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  line-height: 1;
+  white-space: nowrap;
 }
 
 /* ─── Nav links ────────────────────────────────────────────────────────────── */
@@ -161,11 +174,17 @@
   }
 
   .site-nav__logo {
+    gap: 10px;
     min-width: 0;
   }
 
-  .site-nav__logo-image {
-    width: 186px;
+  .site-nav__logo-symbol {
+    width: 48px;
+    height: 48px;
+  }
+
+  .site-nav__logo-text {
+    font-size: 19px;
   }
 
   .site-nav__links {
