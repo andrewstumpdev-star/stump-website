@@ -1,7 +1,7 @@
 /* ─── Footer ──────────────────────────────────────────────────────────────── */
 
 .site-footer {
-  background: var(--forest-deep);
+  background: var(--charcoal);
   padding: 72px 0 48px;
   margin-top: clamp(48px, 6vw, 80px);
   position: relative;
@@ -19,51 +19,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 4px;
   margin-bottom: 36px;
   color: var(--white);
 }
 
-/* Img-based mark */
-.site-footer__mark {
-  width: 112px;
-  height: 112px;
-  flex-shrink: 0;
-  filter: brightness(0) invert(1);
-  opacity: 0.7;
+.site-footer__logo-image {
+  width: clamp(220px, 24vw, 300px);
+  height: auto;
   display: block;
 }
 
-/* Footer wordmark wrapper */
-.site-footer__wordmark {
-  display: inline-flex;
-  align-items: baseline;
-  gap: 0.4em;
-  line-height: 1;
-}
-
-/* "STUMP" — Poppins, secondary */
-.site-footer__wordmark-stump {
-  font-family: var(--poppins);
-  font-weight: 500;
-  font-size: 18px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--white);
-}
-
-/* "Development" — Fahkwang, primary display */
-.site-footer__wordmark-development {
-  font-family: var(--fahkwang);
-  font-weight: 400;
-  font-size: 18px;
-  letter-spacing: 0.06em;
-  color: var(--white);
-}
-
 .site-footer__tagline {
-  font-family: var(--poppins);
-  font-weight: 300;
+  font-family: var(--manrope);
+  font-weight: 400;
   font-size: 13px;
   color: var(--stone);
   letter-spacing: 0.02em;
@@ -86,8 +54,8 @@
 
 .site-footer__left,
 .site-footer__right {
-  font-family: var(--poppins);
-  font-weight: 300;
+  font-family: var(--manrope);
+  font-weight: 400;
   font-size: 13px;
   color: var(--stone);
   line-height: 1.8;

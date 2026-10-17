@@ -15,7 +15,7 @@
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, var(--forest-deep) 0%, var(--forest-deep) 40%, var(--ember) 100%);
+  background: var(--ocean-slate);
 }
 
 .dev-hero__content {
@@ -37,8 +37,8 @@
 }
 
 .dev-hero__sub {
-  font-family: var(--poppins);
-  font-weight: 300;
+  font-family: var(--manrope);
+  font-weight: 400;
   font-size: 18px;
   line-height: 1.65;
   color: rgba(255,255,255,0.85);
@@ -106,10 +106,10 @@
 }
 
 .dev-feature__address {
-  font-family: var(--fahkwang);
+  font-family: var(--manrope);
   font-weight: 300;
   font-size: clamp(26px, 3vw, 36px);
-  color: var(--forest-deep);
+  color: var(--charcoal);
   margin-bottom: 8px;
 }
 
@@ -157,6 +157,48 @@
   color: var(--stone);
 }
 
+.construction-progress {
+  margin-top: clamp(28px, 4vw, 44px);
+}
+
+.construction-progress__title {
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: var(--stone);
+  margin-bottom: 16px;
+}
+
+.construction-progress__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.construction-progress__item {
+  margin: 0;
+  background: var(--white);
+}
+
+.construction-progress__item img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.construction-progress__item figcaption {
+  padding: 10px 12px 12px;
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--stone);
+}
+
 /* Approach section */
 .dev-approach__content {
   max-width: 680px;
@@ -168,7 +210,7 @@
 }
 
 .dev-approach__body p {
-  color: var(--sage);
+  color: var(--mist);
   font-size: 16px;
   line-height: 1.75;
   margin-bottom: 20px;
@@ -267,6 +309,10 @@
 /* ─── Responsive ──────────────────────────────────────────────────────────── */
 
 @media (max-width: 768px) {
+  .product-chars {
+    grid-template-columns: 1fr !important;
+  }
+
   .selected-project,
   .selected-project--secondary {
     grid-template-columns: 1fr;
@@ -306,5 +352,9 @@
   .dev-feature__image--gallery {
     grid-template-columns: 1fr;
     height: 420px;
+  }
+
+  .construction-progress__grid {
+    grid-template-columns: 1fr;
   }
 }

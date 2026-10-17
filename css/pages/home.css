@@ -25,8 +25,8 @@
 }
 
 .hero__headline {
-  font-family: var(--fahkwang);
-  font-weight: 200;
+  font-family: var(--manrope);
+  font-weight: 300;
   font-size: clamp(40px, 5.8vw, 78px);
   line-height: 0.98;
   color: var(--white);
@@ -40,8 +40,8 @@
 }
 
 .hero__sub {
-  font-family: var(--poppins);
-  font-weight: 300;
+  font-family: var(--manrope);
+  font-weight: 400;
   font-size: 18px;
   line-height: 1.65;
   color: rgba(255,255,255,0.85);
@@ -50,8 +50,8 @@
 }
 
 .hero__hook {
-  font-family: var(--poppins);
-  font-weight: 300;
+  font-family: var(--manrope);
+  font-weight: 400;
   font-size: 13px;
   color: rgba(255,255,255,0.70);
   opacity: 1;
@@ -98,7 +98,25 @@
 .operator-proof__body p {
   font-size: clamp(17px, 2vw, 22px);
   line-height: 1.65;
-  color: var(--forest-deep);
+  color: var(--charcoal);
+}
+
+.operator-proof__cta {
+  display: inline-block;
+  margin-top: 22px;
+  color: var(--charcoal);
+  font-weight: 600;
+  line-height: 1.5;
+  text-decoration: underline;
+  text-decoration-color: var(--ember);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+.operator-proof__cta:hover,
+.operator-proof__cta:focus-visible {
+  color: var(--charcoal);
+  text-decoration-color: var(--ocean-slate);
 }
 
 /* What We Do section */
@@ -107,7 +125,7 @@
 }
 
 .what-we-do__body p {
-  color: var(--sage);
+  color: var(--mist);
   font-size: 16px;
   line-height: 1.8;
   margin-bottom: 20px;
@@ -139,7 +157,7 @@
 }
 
 .thesis__body {
-  color: var(--sage);
+  color: var(--mist);
   font-size: 16px;
   line-height: 1.7;
   margin-bottom: 20px;
@@ -162,13 +180,13 @@
   font-family: var(--mono);
   font-weight: 500;
   font-size: 13px;
-  color: var(--ocean-slate);
+  color: var(--mist);
   padding-top: 2px;
   white-space: nowrap;
 }
 
 .principle__title {
-  font-family: var(--poppins);
+  font-family: var(--manrope);
   font-weight: 500;
   font-size: 15px;
   color: var(--white);
@@ -176,10 +194,10 @@
 }
 
 .principle__body {
-  font-family: var(--poppins);
-  font-weight: 300;
+  font-family: var(--manrope);
+  font-weight: 400;
   font-size: 14px;
-  color: var(--sage);
+  color: var(--mist);
   line-height: 1.65;
 }
 
@@ -214,11 +232,11 @@
 }
 
 .product__item h3 {
-  font-family: var(--poppins);
+  font-family: var(--manrope);
   font-weight: 500;
   font-size: 15px;
   margin-bottom: 10px;
-  color: var(--forest-deep);
+  color: var(--charcoal);
 }
 
 .product__item p {
@@ -241,10 +259,10 @@
 }
 
 .active-dev__address {
-  font-family: var(--fahkwang);
+  font-family: var(--manrope);
   font-weight: 300;
   font-size: clamp(22px, 2.5vw, 30px);
-  color: var(--forest-deep);
+  color: var(--charcoal);
   margin: 12px 0 4px;
 }
 
@@ -319,7 +337,7 @@
 }
 
 .bridge__headline {
-  color: var(--forest-deep);
+  color: var(--charcoal);
   margin-top: 16px;
   margin-bottom: 24px;
 }
@@ -350,21 +368,21 @@
   font-weight: 500;
   font-size: 12px;
   letter-spacing: 0.06em;
-  color: var(--ocean-slate);
+  color: var(--charcoal);
   margin-bottom: 6px;
 }
 
 .bridge__card-title {
-  font-family: var(--poppins);
+  font-family: var(--manrope);
   font-weight: 500;
   font-size: 15px;
-  color: var(--forest-deep);
+  color: var(--charcoal);
   margin-bottom: 4px;
 }
 
 .bridge__card-desc {
-  font-family: var(--poppins);
-  font-weight: 300;
+  font-family: var(--manrope);
+  font-weight: 400;
   font-size: 13px;
   color: var(--stone);
   line-height: 1.6;
@@ -376,16 +394,16 @@
 }
 
 .partnership__headline {
-  font-family: var(--fahkwang);
+  font-family: var(--manrope);
   font-weight: 300;
   font-size: clamp(28px, 3.5vw, 40px);
-  color: var(--forest-deep);
+  color: var(--charcoal);
   margin-bottom: 20px;
 }
 
 .partnership__body {
-  font-family: var(--poppins);
-  font-weight: 300;
+  font-family: var(--manrope);
+  font-weight: 400;
   font-size: clamp(16px, 1.5vw, 18px);
   color: var(--stone);
   max-width: 560px;
@@ -398,10 +416,10 @@
 }
 
 .closing__body {
-  font-family: var(--poppins);
-  font-weight: 300;
+  font-family: var(--manrope);
+  font-weight: 400;
   font-size: clamp(16px, 1.5vw, 18px);
-  color: var(--sage);
+  color: var(--mist);
   max-width: 520px;
   margin: 0 auto 40px;
   line-height: 1.7;

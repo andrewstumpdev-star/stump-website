@@ -1,37 +1,32 @@
 /* ═══════════════════════════════════════════
-   Stump Development · Brand Standards v6.0
+   Stump Development · Brand Standards v10.0
    ═══════════════════════════════════════════ */
 
 :root {
-  /* Dark grounds */
-  --black: #1d1e20;
-  --forest-deep: #2f3a29;
-  --forest: #485342;
+  /* Neutral core */
+  --charcoal: #1B1B1B;
+  --deep-moss: #485342;
 
   /* Midtones */
-  --stone: #6e7777;
-  --sage: #aeb5b0;
+  --stone: #6E7777;
 
   /* Light surfaces */
-  --mist: #dbe2dd;
-  --white-warm: #e2e3db;
-  --linen: #f1f1f1;
-  --white: #ffffff;
+  --mist: #E7E9E7;
+  --white-warm: #F7F5F0;
+  --white: #FFFFFF;
 
   /* Accents */
   --ocean-slate: #5B7F95;   /* Primary public accent */
-  --gold: #B5A47A;          /* Dashboard-only — NOT USED on website */
   --ember: #E8520A;         /* CTA / action accent */
 
   /* Status */
-  --status-ok: #5C7A5A;
-  --status-warn: #3D6B87;   /* Blue, Ocean Slate family */
-  --status-critical: #EF4423;
+  --status-ok: #485342;
+  --status-warn: #5B7F95;
+  --status-critical: #E8520A;
 
   /* Typography */
-  --fahkwang: "Fahkwang", Georgia, serif;
-  --poppins: "Poppins", system-ui, sans-serif;
-  --mono: "DM Mono", monospace;
+  --manrope: "Manrope", system-ui, sans-serif;
+  --mono: "Noto Sans Mono", monospace;
 
   /* Layout */
   --max-width: 1200px;

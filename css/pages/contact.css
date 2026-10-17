@@ -15,7 +15,7 @@
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, var(--forest-deep) 0%, var(--forest-deep) 40%, var(--ember) 100%);
+  background: var(--ocean-slate);
 }
 
 .contact-hero__content {
@@ -85,10 +85,10 @@
 .form-input,
 .form-select,
 .form-textarea {
-  font-family: var(--poppins);
-  font-weight: 300;
+  font-family: var(--manrope);
+  font-weight: 400;
   font-size: 15px;
-  color: var(--black);
+  color: var(--charcoal);
   background: var(--white);
   border: 1px solid rgba(110, 119, 119, 0.25);
   border-radius: 2px;
@@ -103,13 +103,13 @@
 .form-select:focus,
 .form-textarea:focus {
   outline: none;
-  border-color: var(--forest);
+  border-color: var(--ocean-slate);
   box-shadow: 0 0 0 3px rgba(72, 83, 66, 0.08);
 }
 
 .form-input::placeholder,
 .form-textarea::placeholder {
-  color: var(--sage);
+  color: var(--mist);
 }
 
 .form-select {
@@ -140,10 +140,10 @@
 .contact-direct {}
 
 .contact-direct__label {
-  font-family: var(--poppins);
+  font-family: var(--manrope);
   font-weight: 400;
   font-size: 15px;
-  color: var(--forest-deep);
+  color: var(--charcoal);
   margin: 24px 0 20px;
 }
 
@@ -155,21 +155,23 @@
 }
 
 .contact-info-list li {
-  font-family: var(--poppins);
-  font-weight: 300;
+  font-family: var(--manrope);
+  font-weight: 400;
   font-size: 15px;
   color: var(--stone);
   line-height: 1.5;
 }
 
 .contact-info-list a {
-  color: var(--forest);
-  text-decoration: none;
+  color: var(--charcoal);
+  text-decoration: underline;
+  text-decoration-color: var(--ocean-slate);
+  text-underline-offset: 3px;
   transition: color var(--duration) var(--ease);
 }
 
 .contact-info-list a:hover {
-  color: var(--forest-deep);
+  color: var(--charcoal);
 }
 
 .contact-info-list .info-group {
@@ -184,7 +186,7 @@
   padding: 16px 20px;
   border-radius: 2px;
   font-size: 14px;
-  font-family: var(--poppins);
+  font-family: var(--manrope);
 }
 
 .form-status--success {

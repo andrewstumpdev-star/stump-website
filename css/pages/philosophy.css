@@ -15,7 +15,7 @@
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, var(--forest-deep) 0%, var(--forest-deep) 40%, var(--ember) 100%);
+  background: var(--ocean-slate);
 }
 
 .phil-hero__content {
@@ -110,10 +110,10 @@
 }
 
 .team__member-name {
-  font-family: var(--fahkwang);
-  font-weight: 300;
+  font-family: var(--manrope);
+  font-weight: 400;
   font-size: 22px;
-  color: var(--forest-deep);
+  color: var(--charcoal);
   margin-bottom: 4px;
 }
 
@@ -122,7 +122,7 @@
   font-size: 11px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--ocean-slate);
+  color: var(--charcoal);
   margin-bottom: 20px;
 }
 
@@ -170,10 +170,10 @@
 }
 
 .credentials__list li {
-  font-family: var(--poppins);
-  font-weight: 300;
+  font-family: var(--manrope);
+  font-weight: 400;
   font-size: 15px;
-  color: var(--sage);
+  color: var(--mist);
   padding-left: 20px;
   position: relative;
 }
@@ -192,10 +192,10 @@
 }
 
 .credentials__cta-label {
-  font-family: var(--poppins);
-  font-weight: 300;
+  font-family: var(--manrope);
+  font-weight: 400;
   font-size: 16px;
-  color: var(--sage);
+  color: var(--mist);
 }
 
 /* ─── Responsive ──────────────────────────────────────────────────────────── */
