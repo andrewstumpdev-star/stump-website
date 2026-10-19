@@ -35,17 +35,10 @@
 }
 
 .site-nav__logo-image {
+  width: 46px;
   height: auto;
   display: block;
-}
-
-.site-nav__logo-image--desktop {
-  width: 46px;
   filter: brightness(0) invert(1);
-}
-
-.site-nav__logo-image--mobile {
-  display: none;
 }
 
 /* ─── Nav links ────────────────────────────────────────────────────────────── */
@@ -173,13 +166,8 @@
     min-width: 0;
   }
 
-  .site-nav__logo-image--desktop {
-    display: none;
-  }
-
-  .site-nav__logo-image--mobile {
-    display: block;
-    width: 170px;
+  .site-nav__logo-image {
+    width: 40px;
   }
 
   .site-nav__links {
